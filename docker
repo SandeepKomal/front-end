@@ -1,0 +1,16 @@
+version: '3'
+services:
+  springboot-restful-webservices:
+    container_name: frontend-packer-movers
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    networks:
+      - springboot-mysql-net
+    restart: on-failure
+
+networks:
+  springboot-mysql-net:
+    driver: bridge
