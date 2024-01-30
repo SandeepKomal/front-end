@@ -38,7 +38,7 @@ const CustomerForm = () => {
         else {
             console.log(values)
 
-            fetch("http://44.202.41.214:8081/home/customerDetails",{
+            fetch("https://backend.hyderabad-packers-movers.in/customer/customerDetails",{
                 method:"POST",
                 headers:{"Content-Type":"application/json"},
                 body:JSON.stringify(values)                
@@ -49,7 +49,7 @@ const CustomerForm = () => {
 
     /*    else {
             console.log(values)
-            fetch("http://localhost:8081/home/customerDetails",{
+            fetch("https://backend.hyderabad-packers-movers.in/customer/customerDetails",{
 
                 method:"POST",
                 headers:{"Content-Type":"application/json"},
