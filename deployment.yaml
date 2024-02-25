@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: your-docker-image-name:tag
+        image: 637423236688.dkr.ecr.us-east-1.amazonaws.com/frontend:44
         imagePullPolicy: Always
         ports:
         - containerPort: 80
